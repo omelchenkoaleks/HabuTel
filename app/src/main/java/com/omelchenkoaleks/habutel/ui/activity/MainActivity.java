@@ -1,46 +1,48 @@
 package com.omelchenkoaleks.habutel.ui.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.Snackbar;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 import com.omelchenkoaleks.habutel.R;
 import com.omelchenkoaleks.habutel.utils.ConstantManager;
+import com.omelchenkoaleks.habutel.utils.adapter.MainPageAdapter;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener{
     private static final String TAG = ConstantManager.TAG_PREFIX + "Main Activity";
-    private Button testProgressBar;
-    private CoordinatorLayout coordinatorLayout;
+
+    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.d(TAG, "onCreate");
 
-//        testProgressBar = findViewById(R.id.testProgress);
-//        testProgressBar.setOnClickListener(this);
+        viewPager = findViewById(R.id.viewPager);
 
-        coordinatorLayout = findViewById(R.id.main_coordinator_container);
+        MainPageAdapter mainPageAdapter = new MainPageAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(mainPageAdapter);
+
+        if (savedInstanceState == null) {
+            showSnackbar("активити запускается впервые");
+        } else {
+            showSnackbar("активити уже запускалось");
+        }
+
     }
 
     private void showSnackbar(String message) {
-        Snackbar.make(coordinatorLayout, message, Snackbar.LENGTH_LONG).show();
+        // TODO: не работает здесь - почему???
+//        Snackbar.make(coordinatorLayout, message, Snackbar.LENGTH_LONG).show();
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()) {
-//            case R.id.testProgress:
-//                showProgress();
-//                runWithDelay();
-//                break;
-        }
     }
 
-    // тестовый метод для выключения прогресс-бара
+//    // тестовый метод для выключения прогресс-бара
 //    private void runWithDelay() {
 //        final Handler handler = new Handler();
 //        handler.postDelayed(new Runnable() {
