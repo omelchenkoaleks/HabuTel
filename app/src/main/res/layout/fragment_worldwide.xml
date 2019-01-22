@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/worldwide"
     tools:context=".ui.fragment.WorldwideFragment">
 
     <TextView
-        android:id="@+id/worldwide"
+        android:id="@+id/worldwideTextView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Worldwide"/>
+        android:gravity="center" />
 
 </RelativeLayout>

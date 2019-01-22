@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 
 import com.omelchenkoaleks.habutel.R;
 import com.omelchenkoaleks.habutel.utils.ConstantManager;

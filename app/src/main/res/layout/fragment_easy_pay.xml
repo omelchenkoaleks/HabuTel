@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/easy_pay"
     tools:context=".ui.fragment.EasyPayFragment">
 
     <TextView
-        android:id="@+id/easyPayFragment"
+        android:id="@+id/easyPayFragmentTextView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Easy Pay Fragment" />
+        android:gravity="center" />
 
 </FrameLayout>
