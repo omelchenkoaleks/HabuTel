@@ -1,6 +1,8 @@
 package com.omelchenkoaleks.habutel.ui.fragment;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,8 +34,13 @@ public class WorldwideFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_worldwide,  null);
-
         return view;
+    }
+
+    // чтобы не засорять метод onCreateView можно использовать этот метод для инициализации вьюшек
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
     }
 }
 

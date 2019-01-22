@@ -4,6 +4,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.omelchenkoaleks.habutel.ui.fragment.WorldwideFragment;
+
 public class MainPageAdapter extends FragmentPagerAdapter {
 
     public MainPageAdapter(FragmentManager fm) {
@@ -12,11 +14,12 @@ public class MainPageAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int i) {
-        return null;
+        Fragment fragment = new WorldwideFragment();
+        return fragment;
     }
 
     @Override
     public int getCount() {
-        return 0;
+        return 1;
     }
 }
