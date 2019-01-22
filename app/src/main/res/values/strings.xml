@@ -3,6 +3,7 @@
 
     <!-- TextView-->
     <string name="worldwideTextView">Worldwide Service</string>
+    <string name="easyPayTextView">Easy Pay</string>
     <string name="skipTextView">skip</string>
 
     <!-- ImageView-->
