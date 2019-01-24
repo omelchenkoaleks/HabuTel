@@ -16,6 +16,7 @@ public class WorldwideFragment extends Fragment {
 
     public static WorldwideFragment createWorldwideFragment() {
         WorldwideFragment fragment = new WorldwideFragment();
+        // TODO: пока фрагмент без ничего, чтобы передавать значения нужен будет объект Bundle
         return fragment;
     }
 

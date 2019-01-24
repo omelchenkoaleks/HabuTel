@@ -16,6 +16,7 @@ public class StayConnectedFragment extends Fragment {
 
     public static StayConnectedFragment createStayConnectedFragment() {
         StayConnectedFragment fragment = new StayConnectedFragment();
+        // TODO: пока фрагмент без ничего, чтобы передавать значения нужен будет объект Bundle
         return fragment;
     }
 

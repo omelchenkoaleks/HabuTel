@@ -18,6 +18,7 @@ public class EasyPayFragment extends Fragment {
 
     public static EasyPayFragment createEasyPayFragment () {
         EasyPayFragment fragment = new EasyPayFragment();
+        // TODO: пока фрагмент без ничего, чтобы передавать значения нужен будет объект Bundle
         return fragment;
     }
 

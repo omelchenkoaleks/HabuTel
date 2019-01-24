@@ -20,15 +20,12 @@ public class MainPageAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case PAGE_WORLDWIDE_FRAGMENT: {
+            case PAGE_WORLDWIDE_FRAGMENT:
                 return WorldwideFragment.createWorldwideFragment();
-            }
-            case PAGE_EASY_PAY_FRAGMENT: {
+            case PAGE_EASY_PAY_FRAGMENT:
                 return EasyPayFragment.createEasyPayFragment();
-            }
-            case PAGE_STAY_CONNECTED_FRAGMENT: {
+            case PAGE_STAY_CONNECTED_FRAGMENT:
                 return StayConnectedFragment.createStayConnectedFragment();
-            }
 
             default:
                 return null;
