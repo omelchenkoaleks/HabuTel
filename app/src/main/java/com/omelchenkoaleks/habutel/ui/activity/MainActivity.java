@@ -4,11 +4,10 @@ import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
 
 import com.omelchenkoaleks.habutel.R;
 import com.omelchenkoaleks.habutel.utils.ConstantManager;
-import com.omelchenkoaleks.habutel.utils.adapter.MainPageAdapter;
+import com.omelchenkoaleks.habutel.ui.adapters.MainPageAdapter;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener{
     private static final String TAG = ConstantManager.TAG_PREFIX + "Main Activity";

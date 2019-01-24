@@ -9,8 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.omelchenkoaleks.habutel.R;
+import com.omelchenkoaleks.habutel.utils.ConstantManager;
 
 public class StayConnectedFragment extends Fragment {
+    public static final String TAG = ConstantManager.TAG_PREFIX + "Stay Connected Fragment";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class StayConnectedFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_stay_connected, container, false);
     }
 
+    // чтобы не засорять метод onCreateView можно использовать этот метод для инициализации вьюшек
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
