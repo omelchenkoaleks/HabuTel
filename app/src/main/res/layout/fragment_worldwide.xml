@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/worldwide_service"
     android:orientation="vertical"
-    tools:context=".ui.fragment.WorldwideFragment">
+    tools:context=".ui.fragment.main_fragments.WorldwideFragment">
 
 
     <TextView

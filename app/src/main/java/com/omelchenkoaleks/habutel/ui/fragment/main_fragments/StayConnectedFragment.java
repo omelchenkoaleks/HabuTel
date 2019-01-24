@@ -1,4 +1,4 @@
-package com.omelchenkoaleks.habutel.ui.fragment;
+package com.omelchenkoaleks.habutel.ui.fragment.main_fragments;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,10 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.omelchenkoaleks.habutel.R;
-import com.omelchenkoaleks.habutel.utils.ConstantManager;
 
-public class WorldwideFragment extends Fragment {
-    static final String TAG = ConstantManager.TAG_PREFIX + "Worldwide Fragment";
+public class StayConnectedFragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -22,15 +20,11 @@ public class WorldwideFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_worldwide,  null);
-        return view;
+        return inflater.inflate(R.layout.fragment_stay_connected, container, false);
     }
 
-    // чтобы не засорять метод onCreateView можно использовать этот метод для инициализации вьюшек
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
     }
 }
-
-
