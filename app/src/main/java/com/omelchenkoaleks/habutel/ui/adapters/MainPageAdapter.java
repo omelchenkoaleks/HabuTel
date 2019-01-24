@@ -11,7 +11,7 @@ import com.omelchenkoaleks.habutel.ui.fragment.main_fragments.WorldwideFragment;
 public class MainPageAdapter extends FragmentPagerAdapter {
     private static final int PAGE_WORLDWIDE_FRAGMENT = 0;
     private static final int PAGE_EASY_PAY_FRAGMENT = 1;
-    private static final int PAGE_PAY_FRAGMENT = 2;
+    private static final int PAGE_STAY_CONNECTED_FRAGMENT = 2;
 
     public MainPageAdapter(FragmentManager fm) {
         super(fm);
@@ -21,16 +21,13 @@ public class MainPageAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case PAGE_WORLDWIDE_FRAGMENT: {
-                Fragment fragment = new WorldwideFragment();
-                return fragment;
+                return WorldwideFragment.createWorldwideFragment();
             }
             case PAGE_EASY_PAY_FRAGMENT: {
-                Fragment fragment = new EasyPayFragment();
-                return fragment;
+                return EasyPayFragment.createEasyPayFragment();
             }
-            case PAGE_PAY_FRAGMENT: {
-                Fragment fragment = new StayConnectedFragment();
-                return fragment;
+            case PAGE_STAY_CONNECTED_FRAGMENT: {
+                return StayConnectedFragment.createStayConnectedFragment();
             }
 
             default:

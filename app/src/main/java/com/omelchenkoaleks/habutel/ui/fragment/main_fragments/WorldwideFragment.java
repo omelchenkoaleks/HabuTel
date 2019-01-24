@@ -14,6 +14,11 @@ import com.omelchenkoaleks.habutel.utils.ConstantManager;
 public class WorldwideFragment extends Fragment {
     static final String TAG = ConstantManager.TAG_PREFIX + "Worldwide Fragment";
 
+    public static WorldwideFragment createWorldwideFragment() {
+        WorldwideFragment fragment = new WorldwideFragment();
+        return fragment;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -16,6 +16,11 @@ import com.omelchenkoaleks.habutel.utils.ConstantManager;
 public class EasyPayFragment extends Fragment {
     public static final String TAG = ConstantManager.TAG_PREFIX + "Easy Pay Fragment";
 
+    public static EasyPayFragment createEasyPayFragment () {
+        EasyPayFragment fragment = new EasyPayFragment();
+        return fragment;
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
